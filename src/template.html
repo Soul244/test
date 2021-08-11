@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title><% preact.title %></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <style>
+      .preview {
+        width: 100%;
+        max-width: 1100px;
+        margin: 80px auto;
+        border: 1px dashed rgba(0, 0, 0, 0.2);
+        position: relative;
+      }
+
+      .preview::before {
+        content: 'WIDGET PREVIEW';
+        position: absolute;
+        display: block;
+        top: -18px;
+        font-size: 11px;
+        color: rgba(0, 0, 0, 0.5);
+      }
+    </style>
+    <% preact.headEnd %>
+  </head>
+  <body>
+    <div id="dugun-review-widget"
+        class="dugun-review preview"
+        data-prop-lang="tr"
+        data-prop-provider-id="17089"
+        data-prop-api="https://api.dugun.work/"
+        data-prop-hash-url="https://dugun.work/external-reviews/OUZFMmxzd0VvdUpCaVVJUjRZWG1Bdz09">
+    </div>
+    <div id="dugun-footer-review-widget" class="dugun-review preview"
+        data-prop-lang="tr"
+        data-prop-provider-id="17089"
+        data-prop-api="https://api.dugun.work/"
+        data-prop-hash-url="https://dugun.work/external-reviews/OUZFMmxzd0VvdUpCaVVJUjRZWG1Bdz09"
+    ></div>
+    </div>
+    <% preact.bodyEnd %>
+  </body>
+</html>
